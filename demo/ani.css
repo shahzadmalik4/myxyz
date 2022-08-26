@@ -1,0 +1,20 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: relative;
+    animation: square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-play-state: running;
+    animation-direction: normal;
+}
+@keyframes square { 
+    0% {background-color: blue; left: 0px;top: 0px;}
+    25% {background-color: red;left: 300px;top: 0px;}
+    50% {background-color: purple;left: 300px;top: 300px;}
+    75% {background-color: yellow;left: 0px;top: 300px;}
+    100% {background-color: black;left: 0px;top: 0px;}
+}
